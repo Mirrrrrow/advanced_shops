@@ -31,5 +31,6 @@ server_scripts {
 
 files {
     'locales/*.json',
-    'data/*.json'
+    'data/*.lua',
+    'client/*.lua'
 }

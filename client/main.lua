@@ -57,7 +57,7 @@ function Client.addPedInteraction(data)
         onEnter = function(self)
             if self.entity then return end
 
-            local entity = Client.functions.spawnPed({
+            local entity = Client.spawnPed({
                 coords = ped.coords,
                 model = ped.model,
                 animation = ped.animation,
@@ -138,3 +138,5 @@ AddEventHandler('onResourceStop', function(resource)
         end
     end
 end)
+
+require 'client.shops'
